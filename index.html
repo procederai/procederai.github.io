@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Proceder.ai</title>
+        <title>Navigator</title>
         <meta name="description" content="" />
         <link
             rel="shortcut icon"
@@ -35,7 +35,7 @@
     </head>
     <body class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-black tw-text-white">
 		
-		<!-- Bar -->
+		<!-- NavBar -->
         <header class="tw-max-w-lg:tw-px-4 tw-max-w-lg:tw-mr-auto tw-absolute tw-top-0 tw-z-20 tw-flex tw-h-[60px] tw-w-full tw-bg-opacity-0 tw-px-[5%] lg:tw-justify-around fixed-top !tw-bg-black">
             
 			<!-- Logo -->
@@ -63,17 +63,18 @@
 				-->
             </div>
 			
-			<!-- Download -->
-			<!--
+			<!-- Hamburger -->
             <button
                 class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-white lg:tw-hidden"
                 onclick="toggleHeader()"
                 aria-label="menu"
                 id="collapse-btn"
             ></button>
-			-->
 			
         </header>
+		
+		
+		
 
 		<!-- Introduction -->
         <section class="hero-section tw-relative tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-md:tw-mt-[50px]" id="hero-section">
@@ -158,7 +159,7 @@
 				
                 <div class="tw-mt-6 tw-flex tw-flex-wrap tw-place-content-center tw-gap-8"> <!--tw-flex tw-max-w-[80%] max-lg:tw-flex-col -->
 					
-					<div class="reveal-up tw-h-[600px] tw-w-[600px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px] person-left"> <!-- tw-flex -->
+					<div class="reveal-up tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 person-left"> <!-- tw-flex tw-w-[600px] max-md:tw-w-[320px] -->
 					    <div class="tw-text-4xl max-md:tw-text-2xl">
 						    <img src="assets/images/people/alessandro_flaborea_cut.jpg">
 					    </div>
@@ -181,7 +182,7 @@
 						</div>
 					</div>
 					
-					<div class="reveal-up tw-h-[600px] tw-w-[600px] tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 max-md:tw-w-[320px] person-right"> <!-- tw-flex -->
+					<div class="reveal-up tw-gap-8 tw-rounded-xl tw-border-[1px] tw-border-outlineColor tw-bg-secondary tw-p-8 person-right"> <!-- tw-flex tw-w-[600px] max-md:tw-w-[320px] -->
 						<div class="tw-text-4xl max-md:tw-text-2xl">
 							<img src="assets/images/people/lucaF.jpeg">
 						</div>
@@ -233,7 +234,10 @@
 			
             <div class="reveal-up tw-mt-6 tw-flex tw-flex-wrap tw-place-content-center tw-gap-10 max-lg:tw-flex-col">
 				
-                <div class="tw-flex tw-h-[600px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px] card">
+                <div class="tw-flex tw-h-[700px] tw-w-[400px] tw-flex-col tw-gap-4 tw-overflow-clip tw-rounded-lg tw-p-4 max-lg:tw-w-[300px] card">
+					<p class="mb-nx1">
+						CVPR '24
+					</p>
 					<h3 class="tw-mt-2 tw-text-2xl tw-font-semibold max-md:tw-text-xl">
 					    PREGO
 					</h3>
@@ -241,7 +245,7 @@
 					    Online mistake detection in<br>
 						PRocedural EGOcentric videos
 					</p>
-					<div class="tw-h-[250px] tw-w-full tw-overflow-hidden tw-rounded-md">
+					<div class="tw-w-full tw-overflow-hidden tw-rounded-md"> <!-- tw-h-[250px] -->
                         <img
                             src="./assets/images/research/prego.jpeg"
                             alt="article image"
@@ -273,13 +277,13 @@
 		<section class="tw-mt-auto tw-flex tw-w-full tw-place-content-around tw-gap-3 tw-p-[5%] tw-px-[10%] tw-text-white max-md:tw-flex-col mt-sm-6" id="follow_us">
 			<div class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full">
                 <h3 class="reveal-up tw-text-4xl tw-font-medium max-md:tw-text-2xl">Follow us</h3>
-				<!-- <div class="reveal-up tw-text-2xl max-md:tw-text-xl">
+				<div class="reveal-up tw-text-2xl max-md:tw-text-xl">
 					Placeholder
-				</div> -->
-                <div class="reveal-up tw-flex tw-gap-4 tw-text-2xl">
-                    <!-- <a href="" aria-label="Facebook">
+				</div>
+                <div class="reveal-up tw-flex tw-gap-4 tw-text-2xl mb-3">
+                    <a href="" aria-label="Facebook">
                         <i class="bi bi-facebook"></i>
-                    </a> -->
+                    </a>
                     <a href="https://x.com/proceder_ai" aria-label="Twitter">
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
@@ -292,7 +296,7 @@
 			  	<div style="display: flex; max-width: 100%; margin-top: 0px; margin-bottom: 0px;">
 			  		<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="" title="Twitter Timeline"
 						src="https://syndication.twitter.com/srv/timeline-profile/screen-name/proceder_ai?creatorScreenName=ProcederAI&amp;dnt=false&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=600px&amp;origin=https%3A%2F%2Fwww.pinlab.org%2F&amp;sessionId=d4186f10eb27d6e3b0a4d9b9f3951500292a97f9&amp;showHeader=true&amp;showReplies=false&amp;siteScreenName=ItalAI&amp;transparent=false&amp;widgetsVersion=2615f7e52b7e0%3A1702314776716"
-						style="position: static; visibility: visible; width: 446px; height: 403px; display: block; flex-grow: 1;">
+						style="position: static; visibility: visible; width: 446px; height: 423px; display: block; flex-grow: 1;">
 					</iframe>
 				</div>
 				<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

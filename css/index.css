@@ -33,6 +33,7 @@ header > .collapsible-header{
     place-content: center;
     overflow: hidden;
     transition: width 0.3s ease;
+	opacity: 0;
 }
 
 .animated-collapse{

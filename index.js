@@ -21,8 +21,9 @@ function onHeaderClickOutside(e) {
 function toggleHeader() {
     if (isHeaderCollapsed) {
         // collapseHeaderItems.classList.remove("max-md:tw-opacity-0")
-        collapseHeaderItems.classList.add("opacity-100",)
-        collapseHeaderItems.style.width = "60vw"
+        //collapseHeaderItems.classList.add("opacity-100",)
+		collapseHeaderItems.style.opacity = "100"
+        collapseHeaderItems.style.width = "25vw"
         collapseBtn.classList.remove("bi-list")
         collapseBtn.classList.add("bi-x", "max-lg:tw-fixed")
         isHeaderCollapsed = false
@@ -30,7 +31,8 @@ function toggleHeader() {
         setTimeout(() => window.addEventListener("click", onHeaderClickOutside), 1)
 
     } else {
-        collapseHeaderItems.classList.remove("opacity-100")
+        //collapseHeaderItems.classList.remove("opacity-100")
+		setTimeout(() => {collapseHeaderItems.style.opacity = "0"}, collapseHeaderItems.style.animationDelay + 200); 
         collapseHeaderItems.style.width = "0vw"
         collapseBtn.classList.remove("bi-x", "max-lg:tw-fixed")
         collapseBtn.classList.add("bi-list")
