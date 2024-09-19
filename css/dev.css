@@ -6,7 +6,7 @@
 	left: 0;
 	z-index: 1030;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
 	#collapsed-header-items {opacity: 100 !important;}
 }
 
@@ -76,53 +76,97 @@
 	top:1px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 899px) {
 	.person-left, .person-right {max-width: 90vw;}
 }
 @media screen and (min-width: 900px) {
 	.person-left, .person-right {max-width: 44vw;}
 }
-.person-left img {
-	float: left;
-	min-width: 200px;
-	height: 200px;
-	border-radius: 100%;
-	padding-right: 10px;
+@media screen and (max-width: 600px) {
+	.person-left, .person-right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		text-align: justify;
+	}
+	.person-left img {
+		max-width: 180px;
+		height: auto;
+		border-radius: 100%;
+		margin-bottom: 10px;
+	}
+	.person-left h3 {
+		margin: 0px 4px;
+		text-align: center;
+	}
+	.person-left p {
+		margin: 15px 5px;
+		text-align: center;
+	}
+	.person-right img {
+		max-width: 180px;
+		height: auto;
+		border-radius: 100%;
+		margin-bottom: 10px;
+	}
+	.person-right h3 {
+		margin: 0px 4px;
+		text-align: center;
+	}
+	.person-right p {
+		margin: 15px 5px;
+		text-align: center;
+	}
 }
-.person-left h3 {
-	margin: 0px 15px;
-	text-align: right;
-}
-.person-left p {
-	margin: 15px;
-	text-align: right;
-}
-.person-right img {
-	float: right;
-	min-width: 200px;
-	height: 200px;
-	border-radius: 100%;
-	padding-left: 10px;
-}
-.person-right h3 {
-	margin: 0px 15px;
-	text-align: left;
-}
-.person-right p {
-	margin: 15px;
-	text-align: left;
+@media screen and (min-width: 601px) {
+	.person-left img {
+		float: left;
+		max-width: 180px;
+		height: auto;
+		border-radius: 100%;
+		margin-right: 20px;
+		margin-bottom: 10px;
+	}
+	.person-left h3 {
+		margin: 0px 4px;
+		text-align: right;
+	}
+	.person-left p {
+		margin: 15px 5px;
+		text-align: right;
+	}
+	.person-right img {
+		float: right;
+		max-width: 180px;
+		height: auto;
+		border-radius: 100%;
+		margin-left: 20px;
+		margin-bottom: 10px;
+	}
+	.person-right h3 {
+		margin: 0px 4px;
+		text-align: left;
+	}
+	.person-right p {
+		margin: 15px 5px;
+		text-align: left;
+	}
 }
 
 #partners {
 	margin-top: 60px;
 }
-@media screen and (max-width: 600px) {
-	.italai {min-height: 80px;}
+#partners a {
+	display: flex;
+	text-align: center;
+	justify-content: center;
 }
-@media screen and (min-width: 900px) {
-	.italai {min-height: 200px;}
-}
-.italai {margin: 50px;}
+@media screen and (max-width: 480px) {.italai {margin: -30px 50px;}}
+@media screen and (min-width: 481px) and (max-width: 600px) {.italai {margin: -10px 50px;}}
+@media screen and (min-width: 601px) and (max-width: 768px) {.italai {margin: 10px 50px;}}
+@media screen and (min-width: 769px) and (max-width: 900px) {.italai {margin: 30px 50px;}}
+@media screen and (min-width: 901px) {.italai {margin: 50px;}}
+.italai { width: 80%; height: 200px; }
 
 .email-input {
   padding: 15px 22px !important;
